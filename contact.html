@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Maasai Mara Travel</title>
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BODY */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* HEADER */
+.header{
+            background-color: whitesmoke;
+            width:98%;
+            height:5vh;
+            justify-content:right;
+            display: flex;
+        }
+    header
+     {
+    background-color:whitesmoke;
+    width:100%;
+    height:20vh;
+    align-items:center;
+    justify-content:center;
+     }
+    img{
+        height:80px;
+      }
+     nav ul{
+        display: flex;
+        gap: 20px;
+        list-style: none;
+      }
+      nav ul li a{
+        text-decoration: none;
+      }
+      nav ul li a:hover{
+         color:white;
+      }
+      button{
+        margin-right: 40px;
+        padding: 8px;
+        border-radius: 10px;
+        background-color: burlywood;
+      }     .game{
+        display: flex;
+        gap: 20px;
+     }
+     .bi-instagram{
+        display: flex;
+        transition: transform 0.3s;
+        padding: 5px;
+        border-radius:50%;
+         color: hotpink;
+        cursor: pointer;
+     }
+     .bi-instagram:hover{
+        transform: scale(1.3);
+     }
+     .bi-facebook:{
+        padding:5px;
+       color: lightblue;
+      cursor: pointer;
+      display: flex;
+      border-radius:50%;
+        transition: transform 0.3s;
+     }
+     .bi-facebook:hover{
+        transform: scale(1.3)
+     }
+     .bi-whatsapp:{
+      padding: 30px;
+       color:green;
+      cursor: pointer;
+      display: flex;
+        transition: transform 0.3s;
+          border-radius:50%;
+     }
+     .bi-whatsapp:hover{
+        transform: scale(1.3)
+     }
+       .bi-tiktok:{
+        padding:5px;
+       color:black;
+      cursor: pointer;
+      display: flex;
+        transition: transform 0.3s;
+    border-radius:50%;
+     }
+     .bi-tiktok:hover{
+        transform: scale(1.3)
+     }
+     .house{
+        display: flex;
+        background-color:white;
+        height:18vh;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+     }
+     .home img{
+       width:140px;
+       border-radius:10px;
+       height:90px;
+          }
+          .left{
+            text-align: left;
+            margin-top: 30px;
+          }
+      /* HERO */
+.tour{
+    height:90vh;
+    background:url('https://images.unsplash.com/photo-1516426122078-c23e76319801') center/cover no-repeat;
+    position:relative;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    color:white;
+}
+
+.overlay h1{
+    font-size:50px;
+}
+
+.overlay p{
+    margin-top:10px;
+}
+/* HUSE*/
+.Huse {
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*CONTAINER */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    width: 380px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* TITLE */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0f3d2e;
+}
+
+/* LABELS */
+label {
+    display: block;
+    margin-top: 12px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* INPUTS */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #1f6f54;
+}
+
+/* TEXTAREA */
+textarea {
+    height: 100px;
+}
+
+/* BUTTON */
+button {
+    margin-right: 40px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: burlywood;
+}
+
+
+
+/* CONTACT FORM */
+.info {
+    text-align: center;
+    margin-top: 15px;
+    color:black;
+}
+
+/* game */
+.icons{
+        width:100%;
+        height:45px;
+        display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    }
+    .bi-instagram{
+        color:deeppink;
+    }
+
+    .bi-instagram:hover{
+        color: lightpink;
+        cursor: pointer;
+    }
+    .bi-facebook{
+        color:blue;
+    }
+    .bi-facebook:hover{
+        color:lightblue;
+        cursor: pointer;
+    }
+    .bi.whatsapp{
+        color:limegreen;
+        cursor:pointer ;
+    }
+    .bi-whatsapp:hover{
+        cursor: pointer;
+        color:green;
+    }
+        .bi.tiktok{
+        color:black;
+    }
+    .bi-tiktok:hover{
+        color: white;
+        cursor: pointer;
+    }
+
+/* SOCIAL ICONS */
+.icons i{
+    margin-left:10px;
+    cursor:pointer;
+}
+
+.icons i:hover{
+    color:burlywood;
+}
+.home{
+        width:100%;
+        height: 100vh;
+      text-align:center;
+       background-color:white; 
+        }
+        .alg{
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        button{
+        width: 98px;
+
+        }
+        .eat{
+            
+        }
+     
+     .game{
+        display: flex;
+        gap: 20px;
+        justify-content: right;
+     }
+/* FOOTER */
+footer{
+    background:darkgreen;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+      <section class="header">
+    <div class="game">
+        <i class="bi-instagram" onclick="Openinstagram()"></i>
+            <i class="bi-facebook" onclick="Openfacebook()"></i>
+            <i class="bi-whatsapp" onclick="Openwhatapp()"></i>
+            <i class="bi-tiktok" onclick="Opentiktok()"></i>
+        </div>
+    </section>
+     <section class="house">
+    <div>
+    <img src="hg.PNG" alt="Logo">
+     </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about us.html">about us</a></li>
+                    <li><a href="services.html">services</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  <li><button>Request</button></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="eat">
+            <div>
+                Contact Us for Your Masai Mara Tour
+            </div>
+    <div>
+Ready to book your premium Kenya holidays? Get in touch with our Kenya Masai Mara packages experts and start planning your dream safari adventure.
+                
+            </div>
+        </section>
+<!-- CONTACT FORM -->
+<div class="Huse">
+    <div class="container">
+        <form>
+            <h2>Contact Us</h2>
+
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Phone</label>
+            <input type="tel" placeholder="Optional">
+
+            <label>Message</label>
+            <textarea placeholder="Tell us about your safari..." required></textarea>
+
+            <button type="submit">Send Message</button>
+
+            <div class="info">
+                <p>Maasai Mara, Kenya</p>
+                <p>📞 +254 73243212</p>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- FOOTER -->
+<footer>
+    <p>Explore World Travel © 2026</p>
+    <p>Email: alvin@gmail.com</p>
+</footer>
+<script>
+    function Openinstagram(){
+    let link=""
+    let message="Hello Alvin"
+    link="https://www.instagram.com/offx.no.one?igsh=MTh5NndjOW9zYzhjZA="
+    window.open ( link,"_blank")
+    }
+     function Openwhatsapp(){
+    let link=""
+    let message="Hello Alvin"
+    url="https:/wa.me/254759582480" + "?text=" + encodeURIComponent(message);
+    window.open (url,"_blank")
+    }
+    function Openfacebook(){
+    let link=""
+    let message="Hello Alvin"
+    link="https://www.facebook.com/profile.php?id=61568867090591="
+    window.open ( link,"_blank")
+    }
+     function Opentiktok(){
+    let link=""
+    link="https://www.tiktok.com/@alvinrwamba="
+    window.open ( link,"_blank")
+    }
+</script>
+</body>
+</html>

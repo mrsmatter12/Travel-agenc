@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maasai Mara Experience</title>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}.hat{
+    height:40px;
+    width: 40px;
+    align-items: center;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    background-color: blanchedalmond;
+    transition:transform 4s;
+}
+.hat:hover{
+     transform: scale(1.3);
+}
+.now{
+     height:40px;
+    width: 40px;
+     align-items: center;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    background-color: lightcyan;
+    transition:transform 4s;
+}
+.now:hover{
+     transform: scale(1.3);
+}
+.cars{
+     height:40px;
+    width: 40px;
+     align-items: center;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    background-color: lightblue;
+    transition:transform 4s;
+}
+.cars :hover{
+     transform: scale(1.3);
+}
+.goat{
+     height:40px;
+    width: 40px;
+     align-items: center;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    background-color: lightcyan;
+    transition:transform 4s;
+}
+.goat:hover{
+     transform: scale(1.3);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* HEADER */
+.header{
+            background-color: whitesmoke;
+            width:98%;
+            height:5vh;
+            justify-content:right;
+            display: flex;
+        }
+    header
+     {
+    background-color:whitesmoke;
+    width:100%;
+    height:20vh;
+    align-items:center;
+    justify-content:center;
+     }
+    img{
+        height:80px;
+      }
+     nav ul{
+        display: flex;
+        gap: 20px;
+        list-style: none;
+      }
+      nav ul li a{
+        text-decoration: none;
+      }
+      nav ul li a:hover{
+         color:white;
+      }
+      button{
+        margin-right: 40px;
+        padding: 8px;
+        border-radius: 10px;
+        background-color: burlywood;
+      }
+      .top{
+        display: flex;
+        justify-content: right;
+
+      }
+      .nn{
+        display: flex;
+        gap: 20px;
+      }
+
+    .color{
+        color: whitesmoke;
+        font-size: 40px;
+    }
+    .overlay{
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 88vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+              }
+/* HERO */
+.tour{
+    height:90vh;
+    background:url('https://images.unsplash.com/photo-1516426122078-c23e76319801') center/cover no-repeat;
+    position:relative;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    color:white;
+}
+
+.overlay h1{
+    font-size:50px;
+}
+
+.overlay p{
+    margin-top:10px;
+}
+/* SERVICES */
+.services{
+    padding:18px;
+    text-align:center;
+    background-color:white;
+}
+
+.service-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    margin-top:30px;
+}
+
+.service-card{
+    background:#f9f9f9;
+    padding:25px;
+    width:220px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+}
+.service-card i{
+    font-size:30px;
+    color:#b8860b;
+}
+.main{
+    color:limegreen;
+    font-family:Cormorant Garamond,serif;
+     font-size: 42px;
+     text-align: center;
+}
+.make{
+    display: block;
+}
+.mass{
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.18;
+    margin-bottom: 1rem
+
+}
+
+
+
+/* FOOTER */
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+.footer-container{
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+}
+.footer-bottom{
+    margin-top: 30px;
+}
+hr{
+    margin-top:30px;
+}
+.icons{
+        width:100%;
+        height:45px;
+        display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    }
+    .bi-instagram{
+        color:deeppink;
+    }
+
+    .bi-instagram:hover{
+        color: lightpink;
+        cursor: pointer;
+    }
+    .bi-facebook{
+        color:blue;
+    }
+    .bi-facebook:hover{
+        color:lightblue;
+        cursor: pointer;
+    }
+    .bi.whatsapp{
+        color:limegreen;
+        cursor:pointer ;
+    }
+    .bi-whatsapp:hover{
+        cursor: pointer;
+        color:green;
+    }
+        .bi.tiktok{
+        color:black;
+    }
+    .bi-tiktok:hover{
+        color: black and white;
+        cursor: pointer;
+    }
+
+/* SOCIAL ICONS */
+.icons i{
+    margin-left:10px;
+    cursor:pointer;
+}
+
+.icons i:hover{
+    color:burlywood;
+}
+.home{
+        width:100%;
+        height: 100vh;
+      text-align:center;
+       background-color:white; 
+        }
+        .alg{
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        button{
+            padding: 3px;
+            margin-left: 20px;
+        }
+     .game{
+        display: flex;
+        gap: 20px;
+     }
+     .bi-instagram{
+        display: flex;
+        transition: transform 0.3s;
+        padding: 5px;
+        border-radius:50%;
+         color: hotpink;
+        cursor: pointer;
+     }
+     .bi-instagram:hover{
+        transform: scale(1.3);
+     }
+     .bi-facebook:{
+        padding:5px;
+       color: lightblue;
+      cursor: pointer;
+      display: flex;
+      border-radius:50%;
+        transition: transform 0.3s;
+     }
+     .bi-facebook:hover{
+        transform: scale(1.3)
+     }
+     .bi-whatsapp:{
+      padding: 30px;
+       color:green;
+      cursor: pointer;
+      display: flex;
+        transition: transform 0.3s;
+          border-radius:50%;
+     }
+     .bi-whatsapp:hover{
+        transform: scale(1.3)
+     }
+       .bi-tiktok:{
+        padding:5px;
+       color:black;
+      cursor: pointer;
+      display: flex;
+        transition: transform 0.3s;
+    border-radius:50%;
+     }
+     .bi-tiktok:hover{
+        transform: scale(1.3)
+     }
+     .house{
+        display: flex;
+        background-color:white;
+        height:15vh;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+     }
+     .home img{
+       width:140px;
+       border-radius:10px;
+       height:90px;
+          }
+          .left{
+            text-align: left;
+            margin-top: 30px;
+          }
+
+</style>
+</head>
+<body>
+<header>
+     <section class="header">
+    <div class="game">
+        <i class="bi-instagram" onclick="Openinstagram()"></i>
+            <i class="bi-facebook" onclick="Openfacebook()"></i>
+            <i class="bi-whatsapp" onclick="Openwhatapp()"></i>
+            <i class="bi-tiktok" onclick="Opentiktok()"></i>
+        </div>
+    </section>
+     <section class="house">
+    <div>
+    <img src="hg.PNG" alt="Logo">
+     </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about us.html">about us</a></li>
+                    <li><a href="services.html">services</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  <li><button>Request</button></li>
+                </ul>
+            </nav>
+</header>
+    <!-- HERO -->
+<section class="tour">
+    <div class="overlay">
+        <h1>Travel Tours</h1>
+        <p>Explore the beauty of Maasai Mara</p>
+        <div>
+        <button>Services</button>
+        <button>Contact Us</button>
+    </div>
+    </div>
+</section>
+</section>
+<div class="make">
+   <p class="main">Welcome to Maasai  mara</p>
+   <h3 class="mass"> One of the Greatest Wildlife Reserves in the world, with its populations of lions, leopards, cheetahs and African bush elephants. It also hosts the Great Migration, which secured it as one of the Seven Natural Wonders of Africa, and as one of the ten Wonders of the World.One of the Greatest Wildlife Reserves in the world<br></h3>
+
+
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- About -->
+        <div class="footer-section">
+            <h3>Explore World Travel</h3>
+            <p>
+                We offer unforgettable safari <br> experiences across Kenya,<br> 
+                including Maasai Mara,<br> Amboseli, and coastal tours.
+            </p>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about us.html">about us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-section">
+            <h3>Our Tours</h3>
+            <ul>
+                <li>Maasai Mara Safari</li>
+                <li>Amboseli Tours</li>
+                <li>Diani Beach Holidays</li>
+                <li>Mount Kenya Hiking</li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-section">
+             <h2>Contact Us</h2>
+             <p>Email:alvin@gmail</p>
+
+            <div class="icons">
+                <i class="bi-instagram"></i>
+                <i class="bi-facebook"></i>
+                <i class="bi-whatsapp"></i>
+                <i class="bi-tiktok"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <hr>
+    <div class="footer-bottom">
+        <p>© 2026 Explore World Travel | All Rights Reserved</p>
+    </div>
+</footer>
+<script>
+    function Openinstagram(){
+    let link=""
+    let message="Hello Alvin"
+    link="https://www.instagram.com/offx.no.one?igsh=MTh5NndjOW9zYzhjZA="
+    window.open ( link,"_blank")
+    }
+     function Openwhatsapp(){
+    let link=""
+    let message="Hello Alvin"
+    url="https:/wa.me/254759582480" + "?text=" + encodeURIComponent(message);
+    window.open (url,"_blank")
+    }
+    function Openfacebook(){
+    let link=""
+    let message="Hello Alvin"
+    link="https://www.facebook.com/profile.php?id=61568867090591="
+    window.open ( link,"_blank")
+    }
+     function Opentiktok(){
+    let link=""
+    link="https://www.tiktok.com/@alvinrwamba="
+    window.open ( link,"_blank")
+    }
+</script>
+</body>
+</html>
